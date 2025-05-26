@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+
+  postgres:
+    container_name: equipment_repairs_postgres
+    image: postgres:14.0
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: equipment_repairs
+      PGDATA: "/data/equip/postgres"
+    volumes:
+      - postgres:/data/equip/postgres
+    ports:
+      - "5434:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres:
