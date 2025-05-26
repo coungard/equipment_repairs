@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: equipment_repairs
+  datasource:
+    url: jdbc:postgresql://localhost:5435/equipment_repairs
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+  sql:
+    init:
+      mode: always
