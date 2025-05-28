@@ -3,8 +3,8 @@ CREATE TABLE IF NOT EXISTS repair_request (
     title VARCHAR(20) NOT NULL UNIQUE,
     description VARCHAR(512),
     status VARCHAR(24) NOT NULL,
-    createdAt TIMESTAMP NOT NULL,
-    updatedAt TIMESTAMP,
-    createdBy VARCHAR(50) NOT NULL,
-    assignedTo VARCHAR(50)
+    created_at TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP,
+    created_by VARCHAR(50) NOT NULL,
+    assigned_to VARCHAR(50)
 )
