@@ -5,6 +5,6 @@ CREATE TABLE IF NOT EXISTS repair_request (
     status VARCHAR(24) NOT NULL,
     created_at TIMESTAMP NOT NULL,
     updated_at TIMESTAMP,
-    created_by VARCHAR(50) NOT NULL,
-    assigned_to VARCHAR(50)
+    created_by VARCHAR(120) NOT NULL,
+    assigned_to VARCHAR(120)
 )

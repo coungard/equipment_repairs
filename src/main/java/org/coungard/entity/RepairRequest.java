@@ -5,7 +5,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToOne;
 import java.time.LocalDateTime;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -26,11 +25,9 @@ public class RepairRequest {
   private LocalDateTime createdAt;
   @Column(name = "updated_at")
   private LocalDateTime updatedAt;
-  @OneToOne
   @Column(name = "created_by")
-  private User createdBy;
-  @OneToOne
+  private String createdBy;
   @Column(name = "assigned_to")
-  private User assignedTo;
+  private String assignedTo;
 
 }

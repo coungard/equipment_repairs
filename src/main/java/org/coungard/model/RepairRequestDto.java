@@ -14,6 +14,6 @@ public class RepairRequestDto {
   private String status;
   private LocalDateTime createdAt;
   private LocalDateTime updatedAt;
-  private User createdBy;
-  private User assignedTo;
+  private String createdBy;
+  private String assignedTo;
 }
